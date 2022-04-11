@@ -1,7 +1,7 @@
 import 'package:edstem_test/view/widgets/app_bar/app_bar.dart';
 import 'package:edstem_test/view/widgets/celebration_card/celebration_card.dart';
 import 'package:edstem_test/view/widgets/contact_card/contact_card.dart';
-import 'package:edstem_test/view/widgets/socialmedia_icon.dart';
+import 'package:edstem_test/view/widgets/social_media_icon_view/socialmedia_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
