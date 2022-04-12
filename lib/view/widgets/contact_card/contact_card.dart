@@ -1,5 +1,3 @@
-
-
 import 'package:edstem_test/view/widgets/contact_card/contact_card_row.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +18,7 @@ class ContactCard extends StatelessWidget {
             ContactCardRow(
               title: 'Address',
               text: '601 Lakeland Terrace',
+              icon: Icons.fmd_good_rounded,
             ),
             VerticalDivider(
               color: Color(0xFFE3EEFF),
@@ -28,6 +27,7 @@ class ContactCard extends StatelessWidget {
             ContactCardRow(
               title: 'Phone Number',
               text: '91 6456584156',
+              icon: Icons.phone,
             )
           ],
         ),

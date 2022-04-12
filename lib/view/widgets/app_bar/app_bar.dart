@@ -50,7 +50,10 @@ class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {
       bottom: const PreferredSize(
         child: Text(
           "Trinity Mar Thoma Church,Houston",
-          style: TextStyle(color: Color(0xFF353D65)),
+          style: TextStyle(
+              color: Color(0xFF353D65),
+              fontFamily: 'Archivo',
+              fontWeight: FontWeight.w600),
         ),
         preferredSize: Size.fromHeight(0),
       ),

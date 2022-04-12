@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ContactCardRow extends StatelessWidget {
-  const ContactCardRow({Key? key, required this.title, required this.text})
+  const ContactCardRow(
+      {Key? key, required this.title, required this.text, required this.icon})
       : super(key: key);
   final String title;
   final String text;
+  final IconData icon;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,10 +18,10 @@ class ContactCardRow extends StatelessWidget {
           Container(
             width: 17,
             height: 17,
-            decoration:
-                const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF6ED3DF)),
-            child: const Icon(
-              Icons.fmd_good_rounded,
+            decoration: const BoxDecoration(
+                shape: BoxShape.circle, color: Color(0xFF6ED3DF)),
+            child: Icon(
+              icon,
               size: 12,
               color: Colors.white,
             ),
@@ -34,27 +35,24 @@ class ContactCardRow extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: GoogleFonts.playfairDisplaySc(
-                  textStyle: const TextStyle(
-                      color: Color(0xFF353D65),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400),
-                ),
+                style: const TextStyle(
+                    color: Color(0xFF353D65),
+                    fontFamily: 'Playfair Display',
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400),
               ),
               Text(
                 text,
-                style: GoogleFonts.archivo(
-                  textStyle: const TextStyle(
-                      color: Color(0xFF353D65),
-                      fontSize: 12,
-                      fontWeight: FontWeight.w400),
-                ),
+                style: TextStyle(
+                    color: Color(0xFF353D65),
+                    fontFamily: 'Archivo',
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400),
               ),
             ],
           )
         ],
       ),
     );
-    
   }
 }

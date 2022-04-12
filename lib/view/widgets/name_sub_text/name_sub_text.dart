@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class NameSubText extends StatelessWidget {
   const NameSubText({Key? key}) : super(key: key);
@@ -11,12 +10,11 @@ class NameSubText extends StatelessWidget {
       children: [
         Text(
           'Peral Land East',
-          style: GoogleFonts.archivo(
-            textStyle: const TextStyle(
-                color: Color(0xFF767C9C),
-                fontSize: 12,
-                fontWeight: FontWeight.w400),
-          ),
+          style: const TextStyle(
+              color: Color(0xFF767C9C),
+              fontFamily: 'Archivo',
+              fontSize: 12,
+              fontWeight: FontWeight.w400),
         ),
         const SizedBox(
           width: 10,
@@ -27,12 +25,11 @@ class NameSubText extends StatelessWidget {
         ),
         Text(
           '#56566',
-          style: GoogleFonts.archivo(
-            textStyle: const TextStyle(
-                color: Color(0xFF767C9C),
-                fontSize: 12,
-                fontWeight: FontWeight.w400),
-          ),
+          style: const TextStyle(
+              color: Color(0xFF767C9C),
+              fontSize: 12,
+              fontFamily: 'Archivo',
+              fontWeight: FontWeight.w400),
         ),
         const SizedBox(
           width: 10,
@@ -43,12 +40,11 @@ class NameSubText extends StatelessWidget {
         ),
         Text(
           'Male',
-          style: GoogleFonts.archivo(
-            textStyle: const TextStyle(
-                color: Color(0xFF767C9C),
-                fontSize: 12,
-                fontWeight: FontWeight.w400),
-          ),
+          style: const TextStyle(
+              color: Color(0xFF767C9C),
+              fontSize: 12,
+              fontFamily: 'Archivo',
+              fontWeight: FontWeight.w400),
         ),
       ],
     );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class CelebrationCard extends StatefulWidget {
   const CelebrationCard({Key? key}) : super(key: key);
@@ -33,7 +32,11 @@ class _CelebrationCardState extends State<CelebrationCard>
               isScrollable: true,
               labelColor: const Color(0xFF353D65),
               unselectedLabelColor: const Color.fromARGB(255, 164, 165, 170),
-              labelStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
+              labelStyle: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                fontFamily: 'Playfair Display',
+              ),
               padding: const EdgeInsets.all(0),
               indicatorPadding: EdgeInsets.zero,
               labelPadding: const EdgeInsets.symmetric(horizontal: 10),
@@ -121,23 +124,19 @@ class CelebrationTile extends StatelessWidget {
               children: [
                 Text(
                   "Aby Thomas",
-                  style: GoogleFonts.playfairDisplay(
-                    fontStyle: FontStyle.normal,
-                    textStyle: const TextStyle(
-                        color: Color(0xFF353D65),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w700),
-                  ),
+                  style: const TextStyle(
+                      color: Color(0xFF353D65),
+                      fontFamily: 'Playfair Display',
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700),
                 ),
                 Text(
                   "Feb 25 2021,Monday",
-                  style: GoogleFonts.archivo(
-                    fontStyle: FontStyle.normal,
-                    textStyle: const TextStyle(
-                        color: Color(0xFF353D65),
-                        fontSize: 10,
-                        fontWeight: FontWeight.w400),
-                  ),
+                  style: const TextStyle(
+                      color: Color(0xFF353D65),
+                      fontFamily: 'Archivo',
+                      fontSize: 10,
+                      fontWeight: FontWeight.w400),
                 ),
               ],
             ),

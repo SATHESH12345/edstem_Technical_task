@@ -3,7 +3,6 @@ import 'package:edstem_test/view/widgets/celebration_card/celebration_card.dart'
 import 'package:edstem_test/view/widgets/contact_card/contact_card.dart';
 import 'package:edstem_test/view/widgets/social_media_icon_view/socialmedia_icon.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../../widgets/MyHouseHolds/my_house_holds.dart';
 import '../../widgets/bottom_navbar/bottom_nav_bar.dart';
@@ -57,12 +56,11 @@ class HomePage extends StatelessWidget {
                     ),
                     Text(
                       'Abraham Thomas',
-                      style: GoogleFonts.playfairDisplay(
-                        textStyle: const TextStyle(
-                            color: Color(0xFF353D65),
-                            fontSize: 24,
-                            fontWeight: FontWeight.w700),
-                      ),
+                      style: const TextStyle(
+                          color: Color(0xFF353D65),
+                          fontSize: 24,
+                          fontFamily: 'Playfair Display',
+                          fontWeight: FontWeight.w700),
                     ),
                     const SizedBox(
                       height: 8,

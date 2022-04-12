@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class HouseHoldTile extends StatelessWidget {
   const HouseHoldTile(
@@ -24,22 +23,19 @@ class HouseHoldTile extends StatelessWidget {
         ),
         Text(
           name,
-          style: GoogleFonts.playfairDisplay(
-            fontStyle: FontStyle.normal,
-            textStyle: const TextStyle(
-                color: Color(0xFF353D65),
-                fontSize: 13,
-                fontWeight: FontWeight.w700),
-          ),
+          style: TextStyle(
+              color: Color(0xFF353D65),
+              fontSize: 13,
+              fontFamily: 'Playfair Display',
+              fontWeight: FontWeight.w700),
         ),
         Text(
           relation,
-          style: GoogleFonts.archivo(
-            textStyle: const TextStyle(
-                color: Color(0xFF767C9C),
-                fontSize: 10,
-                fontWeight: FontWeight.w400),
-          ),
+          style: const TextStyle(
+              fontFamily: 'Archivo',
+              color: Color(0xFF767C9C),
+              fontSize: 10,
+              fontWeight: FontWeight.w400),
         ),
       ],
     );
